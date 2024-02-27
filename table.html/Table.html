@@ -1,0 +1,191 @@
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TABLES</title>
+        <link rel="stylesheet" href="Table.css"> 
+    </head>
+    <title>Table challenge</title>
+    <style>
+        td, th { border: 1px solid #CCC;}
+        table { boarder: 1px solid black;}
+    </style>
+    <body>
+        <h1 style="color:navy"><u>Practicals</u></h1><br>
+        <h2 style="color:purple"><u>A Simple table sructure</u></h2><br>
+        <table>
+            <caption>Agricultural information centre</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">LIVESTOCK FARMING</th>
+                <th rowspan="2">Goat keeping</th>
+            </tr>
+            <tr>
+                <th>Dairy farming</th>
+                <th>Chicken rearing</th>
+            </tr>
+            <tr>
+                <th scope="row">Examples</th>
+                <td>Jersey cow</td>
+                <td>White chicken</td>
+                <td>Angora</td>
+            </tr>
+            <tr>
+                <th scope="row">Young ones</th>
+                <td>Calf</td>
+                <td>Chick</td>
+                <td>Ram</td>
+            </tr>
+            <tr>
+                <th scope="row">Product</th>
+                <td>Meat and milk</td>
+                <td>Eggs and meat</td>
+                <td>Mohair and meat</td>
+            </tr>
+        </table> <br>
+        <h2 style="color:magenta"><u>Text-entry controls</u></h2><br>
+        
+        <li><label>Favourite color:<input type="text" name="favcolor" value="Red" max length="50"></label></li>
+       
+        <p><label>Official contest entry:<br>
+        <em>Tell us why you love this band.Five winners will get backstage passes!</em><br>
+        <textarea name="contest_entry"rows="5"cols="50">The band is totally awesome!</textarea></label></p><br>
+    
+        <p><label>Official contest entry:<br>
+            <em>Tell us why you love this band.Five winners will get backstage passes!</em><br>
+            <textarea name="contest_entry" placeholder="50 words or less"rows="5"cols="50"></textarea></p><br>     
+            
+            <h2 style="color:green"><u>Specialized text-entry field</u></h2><br>
+            <li><label for="email">Email:</label>
+            <input type="Email" name="Email" maxlength="40" id="Email"></li><br>
+
+            <li><label for="form-pswd">Password:</label>
+                <input type="Password" name="pswd" maxlength="20" id="form-pswd"></li><br>
+
+                <li><label for="tel">Telephone:</label>
+                    <input type="Telephone" name="Telephone" maxlength="15" id="tel"></li><br>
+
+                    <li><label for="url">URL:</label>
+                        <input type="URL" name="URL" maxlength="25" id="url"></li><br>
+
+                        <li><label for="search">Search:</label>
+                            <input type="Search" name="Search" maxlength="20" id="search"></li><br>
+
+            <h2 style="color:blueviolet"><u>Drop-down suggestions</u></h2><br>
+            <p>Education completed: <input type="text" list="edulevel" name="Education">
+                <datalist id="edulevel">
+                    <option value="Highschool"></option>
+                    <option value="Bachelors Degree"></option>
+                    <option value="Masters Degree"></option>
+                    <option value="PhD"></option>
+                </datalist>
+            </p><br>
+
+        <h2 style="color:blue"><u>Forms</u></h2><br>
+
+               <h3><i><u>Form structure</u></i></h3>
+        <form>
+            <li><label for="username"><b>Name:</b></label>
+            <input type="text" name="username" id="username"></li><br>
+
+            <li><label for="School"><b>school:</b></label>
+            <input type="text" name="school" id="school"></li><br>
+
+            <li><label for="Admission number"><b>Admission number:</b></label>
+            <input type="text" name="Admission number" id="Admission number"></li><br>
+              
+            <input type="submit"value="Send">
+        </form>
+                 <h3><i><u>Radio</u></i></h3><br>
+        <form>
+            <label for="username">Chrispine Onyango</label>
+            <input type="radio" name="username" id="username" value="Chrispine Onyango"><br>
+            <label for="username2">Kelvin Klein</label>
+            <input type="radio"  name="username2" id="username2" value="Kelvin Klein"></input><br>
+
+            <input type="submit" value="Send">
+                   <h3>Checkbox</h3>
+                   <label for="username">Chrispine Onyango</label>
+                   <input type="checkbox" name="username" id="username" value="Chrispine Onyango"><br>
+                   <label for="username2">Kelvin Klein</label>
+                   <input type="checkbox"  name="username2" id="username2" value="Kelvin Klein"></input><br>
+
+            <input type="submit" value="Send">
+
+               
+        </form><br>
+
+          <h2 style="color:green"><u>Radio button</u></h2><br>
+
+             <p>How old are you?</p>
+             <ol>
+                <li><input type="radio" name="age" value="under 24" checked> under 24</li>
+                <li><input type="radio" name="age" value="25-34">25-34</li>
+                <li><input type="radio" name="age" value="35-44">35-44</li>
+                <li><input type="radio" name="age" value="45-54">45-54</li>
+                <li><input type="radio" name="age" value="55-64">55-64</li>
+                <li><input type="radio" name="age" value="65-74">65-74</li>
+                <li><input type="radio" name="age" value="over 75">75+</li>
+             </ol><br>
+
+        <h2 style="color:blueviolet"><u>Checkbox button</u></h2><br>
+
+           <p>What type of music do you Listen to?</p>
+           <ul>
+            <li><input type="checkbox" name="genre" value="punk" checked> Punk rock</li>
+            <li><input type="checkbox" name="genre" value="Reggea" checked> Reggea</li>
+            <li><input type="checkbox" name="genre" value="Bongo"> Bongo</li>
+            <li><input type="checkbox" name="genre" value="Rhumba"> Rhumba</li>
+            <li><input type="checkbox" name="genre" value="Riddimz"> Riddimz</li>
+            <li><input type="checkbox" name="genre" value="Hiphops" checked> Hiphops</li>
+
+           </ul><br>
+
+        <h2 style="color:blue"><u>Menus</u></h2><br>
+          <h3 style="color: black"><i>Drop-down menus</i></h3><br>
+            <p> What is your favourite 80s band?
+                <select name="EightiesFave" multiple>
+                    <option>The Cure</option>
+                    <option selected>The Mighty diamonds</option>
+                    <option>The Culture</option>
+                    <option selected>The stanley and turbines </option>
+                    <option>Everything but the Girl</option>
+                    <option>Depeche mode</option>
+                    <option selected>The smiths</option>
+                    <option>new order</option>   
+                </select>
+                </p><br>
+
+        <h3 style="color:black"><i>Scrolling menus</i></h3><br>
+        <p> What is your favourite 80s band?
+            <select name="Eighties bands" size="5" multiple >
+                <option>The Cure</option>
+                <option selected>The Mighty diamonds</option>
+                <option>The Culture</option>
+                <option selected>The stanley and turbines </option>
+                <option selected>Everything but the Girl</option>
+                <option>Depeche mode</option>
+                <option>The smiths</option>
+                <option>new order</option>   
+            </select>
+        </p><br>
+
+        <h3 style="color:black"><i>Grouping menue options</i></h3><br>
+         <p>What is your favourite Meal?</p>
+           <select name="Icecream" size="6" multiple>
+            <optgroup label="Traditional">
+            <option>Vanilla</option>
+            <option selected>Chocolate</option>
+            <option>Chips</option>
+            </optgroup>
+            <optgroup label="Fancy">
+            <option selected>Super praline</option>
+            <option>Nut suprise</option>
+            <option>cundy corn</option>
+            </optgroup>
+           </select>
+
+    
+    </body>
+     </html>
